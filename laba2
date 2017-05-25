@@ -1,0 +1,77 @@
+x = int(input("введите число x = "))
+y = int(input("введите число y = "))
+
+q=(x>0) and (x<5);
+print("a)",q)
+
+q=((0<y) and (y<=6)) or (y<7);
+print("b)",q)
+
+-----------------------------------------
+
+import math
+k=int(input("k="))
+p1=1
+s1=0
+
+for j in range(1,k):
+	if j!=6 and j!=3 :
+		p1=(((j-6)*j)/(j-3))*p1
+		for i in range(j,12):
+			if i!=0 and i!=-5 and i!=11:
+				s1=((((i+5))**1/3)/(i-11))+s1
+				P=p1*s1 		
+print("p=",round(P,2))
+print("s1=",round(s1,2))
+print("p1=",round(p1,2))
+
+-------------------------------------
+
+a = int(input("введите число = "))
+k=0
+for i in range (1,len(a)):
+        if a[i]==i:
+		k=k+1
+	print(i,'-',k)
+	k=0
+  
+   ------------------------------
+  def fun(m,r):
+	G=6.7*10**(-8)
+	g=G*m/r**2
+	return g
+mv = 4.86*10**27
+rv = 6175
+Venera = round(fun(mv,rv),2)
+ms = 5.68*10**29
+rs = 57750
+Saturn = round(fun(ms,rs),2)
+print('Venera - ',Venera)
+print('Saturn - ',Saturn)
+
+----------------------------------
+n1 = int(input("введите число n1 = "))
+n2 = int(input("введите число n2 = "))
+gr=0
+comp='c'
+if n1==1:
+	gr=gr+90
+if n1==-1:
+	gr=gr-90
+if n1==2:
+	gr=gr+180
+if n2==1:
+	gr=gr+90
+if n2==-1:
+	gr=gr-90
+if n2==2:
+	gr=gr+180
+if gr==0 or gr==360:
+	comp='c'
+if gr==90:
+	comp='з'
+if gr==-90:
+	comp='в'
+if gr==180:
+		comp='ю'
+print(comp)
