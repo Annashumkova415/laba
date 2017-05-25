@@ -1,0 +1,29 @@
+S=str(input('vvedite stroky = '))
+print(S.replace('!', ' '))
+
+--------------------------------------
+
+S1=str(input('vvedite stroky 1 = '))	
+print(len(S1))
+
+---------------------------------------------
+
+S=str(input('vvedite stroky = '))
+print(S.replace('я', ' '))
+
+------------------------------------------
+
+s=str(input('введите строку = '))
+j=0
+print(s)
+
+----------------------------------
+
+s=str(input('введите строку = '))
+j=0
+for i in range (0,len(s)):
+	if s[i]==' ':
+		for q in range (j,i-1):
+			s1=s[q]
+		j=i
+print('строка = ',s1)
