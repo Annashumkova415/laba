@@ -28,3 +28,30 @@ for i in range(12):
 	if a[i]==b[i]:
 		a[i]=0
 print(a)
+----------------------------------
+import random
+n=3
+a = []
+min=1000
+n=5
+k = int(random.randint(10,99))
+for i in range(n): 
+	a.append([])
+	for j in range(n): 
+		a[i].append(k)
+		k = int(random.randint(10,99))
+print("Начальный массив")
+for i in a:
+	print(i)
+
+b=True
+
+for i in range(n):
+	for j in range(i,n):
+		if a[i][j]==a[j][i]:
+			b=False
+if b==True:
+	print('симметричен') 
+else:
+	print('не симметричен')
+
